@@ -49,47 +49,7 @@ States hold intermediate memory and context
 
 The graph.yaml or LangGraph configuration in the repo details how each component interacts, enabling full traceability and modularity.
 
-📂 Repository Structure
-bash
-Copy
-Edit
-travel-advisor-agent/
-├── advisor_agent.py         # Core GPT agent code using LangGraph
-├── graph_config.yaml        # LangGraph node/edge configuration
-├── prompts/                 # Custom prompt templates
-├── tools/                   # Tool integration modules (e.g., search, APIs)
-├── utils/                   # Utility functions (e.g., formatting, validation)
-├── README.md                # This documentation file
-├── requirements.txt         # Required Python packages
-└── langgraph_docs/          # LangGraph-related documentation
-✅ Setup Instructions
-1. Clone the Repository
-bash
-Copy
-Edit
-git clone https://github.com/yourusername/travel-advisor-agent.git
-cd travel-advisor-agent
-2. Install Dependencies
-bash
-Copy
-Edit
-pip install -r requirements.txt
-3. Set Environment Variables
-Create a .env file with your OpenAI key and any tool API keys:
-
-ini
-Copy
-Edit
-OPENAI_API_KEY=your-openai-key
-4. Run the Agent
-bash
-Copy
-Edit
-python advisor_agent.py
-If you're using notebooks or a web interface, start the interface and follow the UI.
-
 📘 LangGraph Integration
-LangGraph Version: [mention version if known]
 
 Docs Included: See /langgraph_docs/ folder for:
 
